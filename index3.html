@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="m-0 p-0 box-border">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="src/output.css">
+    
+</head>
+<body>
+
+    <div class="center absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
+        <button id="show-login" class="bg-slate-400 m-10 rounded-full px-5 py-3">
+            <h2>Find a Book</h2>
+        </button>
+    </div>
+    <div class="popup absolute top-[50%] left-[50%] w-[380px] px-[20px] py-[30px] bg-slate-500 rounded-[10px] transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 ease-in-out">
+        <div class="close-btn absolute top-[10px] right-[10px] h-[15px] cursor-pointer">&times;</div>
+        <div class="form m-[15px]">
+            <div class="form-element">
+                <label for="title">Title</label>
+                <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="title" placeholder="Enter title">
+            </div>
+            <div class="form-element">
+                <label for="Author">Author</label>
+                <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="Author" placeholder="Enter Author">
+            </div>
+            <div class="form-element">
+                <label for="pages">Pages</label>
+                <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="pages" placeholder="Enter no. of pages">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="read">
+                <label for="read">Read</label>
+            </div>
+            <div class="form-element">
+                <button class="bg-slate-400 my-10 rounded-full px-5 py-3 w-[100%]">Find it</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

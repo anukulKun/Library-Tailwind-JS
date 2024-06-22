@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body class="bg-slate-700 flex items-center justify-center min-h-[100vh]">
+    <div class="content flex flex-row ">Hello</div>
+    <div class="container max-w-[12000px] w-[95%]">   
+        
+        <div class="slider-wrapper relative">
+            <button id = " prev-slide"class=" slide-button material-symbols-outlined absolute top-[50%] h-[50px] w-[50px] bg-black text-white rounded-[50%] text-[2.2rem] cursor-pointer outline-none  left-[-20px] translate-y-[50%]  hover:bg-slate-400 ">chevron_left</span></button>
+            <div class="image-list grid grid-cols-10 gap-[18px] text-[0px] overflow-auto mb-[30px]">
+                <img src="Images/1.jpg" alt="" class="image-item w-[325px] h-[400px] object-cover">
+                <img src="Images/12.jpg" alt="" class="image-item w-[325px] h-[400px] object-cover">
+                <img src="Images/3.jpg" alt="" class="image-item w-[325px] h-[400px] object-cover">
+                <img src="Images/15.jpg" alt="" class="image-item w-[325px] h-[400px] object-cover">
+                <img src="Images/5.jpg" alt="" class="image-item w-[325px] h-[400px] object-cover">
+                <img src="Images/6.jpg" alt="" class="image-item w-[325px] h-[400px] object-cover">
+                <img src="Images/7.jpg" alt="" class="image-item w-[325px] h-[400px] object-cover">
+                <img src="Images/9.jpg" alt="" class="image-item w-[325px] h-[400px] object-cover">
+                <img src="Images/7.jpg" alt="" class="image-item w-[325px] h-[400px] object-cover">
+                <img src="Images/9.jpg" alt="" class="image-item w-[325px] h-[400px] object-cover">
+            </div>
+            <button class=" slide-button material-symbols-outlined absolute top-[50%] h-[50px] w-[50px] bg-black text-white rounded-[50%] text-[2.2rem] cursor-pointer outline-none  right-[-20px] translate-y-[50%]  hover:bg-slate-400 ">chevron_right</span></button>
+        </div>
+        <div class="sclider-scrollbar h-[24px] w-[100%] flex justify-center items-center hover: h-[4px],">
+            <div class="scrollbar-track h-[2px] w-[100%] bg-[#ccc] relative rounded-[4px] ">
+                <div class="scrollbar-thumb h-[100%] w-[50%]  bg-black absolute rounded-[inherit] cursor-grab after:content-none ,absolute, left-0 ,right-0 ,top-[-10px] ,bottom-[-10px] active:cursor-grabbing ,h-[8px] ,top-[-2px] right[-20px]"></div>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
