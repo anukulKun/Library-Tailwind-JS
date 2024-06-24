@@ -17,15 +17,18 @@
 // }
 
 // window.addEventListener("load", initSlider);
+document.addEventListener('DOMContentLoaded', (event) => {
+    const showLoginButton = document.getElementById('.main');
+    const popup = document.querySelector('.popup');
+    const closeButton = document.querySelector('.close-btn');
 
-document.querySelector("#show-login").addEventListener("click", function() {
-    document.querySelector(".popup").classList.add("active");
-    document.querySelector(".popup").classList.remove("opacity-0");
-    document.querySelector(".popup").classList.add("opacity-100");
-});
+    showLoginButton.addEventListener('click', () => {
+        popup.style.opacity = '1';
+        popup.style.pointerEvents = 'none'; // Enable pointer events
+    });
 
-document.querySelector(".close-btn").addEventListener("click", function() {
-    document.querySelector(".popup").classList.remove("active");
-    document.querySelector(".popup").classList.add("opacity-0");
-    document.querySelector(".popup").classList.remove("opacity-100");
+    closeButton.addEventListener('click', () => {
+        popup.style.opacity = '0';
+        popup.style.pointerEvents = 'none'; // Disable pointer events
+    });
 });
