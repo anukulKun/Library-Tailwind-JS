@@ -5,110 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>popup</title>
     <link rel="stylesheet" href="src/output.css">
-    
 </head>
 <body>
     <div class="flex justify-center items-center flex-col h-[100vh]">
-        
-<!-- find a book , then option to delete a option a book if found -->
-    <div class="center">
-        <button id="show-login" class="bg-slate-400 m-10 rounded-full px-5 py-3">
+        <!-- Find a book -->
+        <button id="show-find" class="bg-red-400 m-10 rounded-full px-5 py-3">
             <h2 class="main">Find a Book</h2>
         </button>
-    </div>
 
+        <!-- Find a Book Popup -->
+        <div class="popup absolute top-[50%] left-[50%] w-[380px] px-[20px] py-[30px] bg-red-300 rounded-[10px] transform -translate-x-1/2 -translate-y-1/2 z-20 hidden">
+            <div class="close-btn absolute top-[10px] right-[10px] h-[15px] cursor-pointer">&times;</div>
+            <div class="form m-[15px] mt-[5px]">
+                <div class="form-element mt-[5px]">
+                    <label for="title">Title</label>
+                    <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="title" placeholder="Enter title">
+                </div>
+                <div class="form-element mt-[5px]">
+                    <label for="Author">Author</label>
+                    <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="Author" placeholder="Enter Author">
+                </div>
+                <div class="form-element mt-[5px]">
+                    <label for="pages">Pages</label>
+                    <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="pages" placeholder="Enter no. of pages">
+                </div>
+                <div class="form-element mt-[5px]">
+                    <button class="bg-slate-400 my-10 rounded-full px-5 py-3 w-[100%]">Find it</button>
+                </div>
+            </div>
+        </div>
 
-    <div class="popup absolute top-[50%] left-[50%] w-[380px] px-[20px] py-[30px] bg-slate-500 rounded-[10px] transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 ease-in-out">
-        <div class="close-btn absolute top-[10px] right-[10px] h-[15px] cursor-pointer">&times;</div>
-        <div class="form m-[15px] mt-[5px]">
-            <div class="form-element mt-[5px]">
-                <label for="title">Title</label>
-                <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="title" placeholder="Enter title">
-            </div>
-            <div class="form-element mt-[5px]">
-                <label for="Author">Author</label>
-                <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="Author" placeholder="Enter Author">
-            </div>
-            <div class="form-element mt-[5px]">
-                <label for="pages">Pages</label>
-                <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="pages" placeholder="Enter no. of pages">
-            </div>
-            <div class="form-element mt-[5px]">
-                <button class="bg-slate-400 my-10 rounded-full px-5 py-3 w-[100%]">Find it</button>
+        <!-- Add a book -->
+        <div class="center">
+            <button id="show-add" class="bg-slate-700 m-10 rounded-full px-5 py-3">
+                <h2 class="main">ADD a book</h2>
+            </button>
+        </div>
+
+        <!-- Add a Book Popup -->
+        <div class="popup2 absolute top-[50%] left-[50%] w-[380px] px-[20px] py-[30px] bg-slate-500 rounded-[10px] transform -translate-x-1/2 -translate-y-1/2 z-20 hidden">
+            <div class="close-btn1 absolute top-[10px] right-[10px] h-[15px] cursor-pointer">&times;</div>
+            <div class="form1 m-[15px]">
+                <div class="form-element1">
+                    <label for="title1">Title</label>
+                    <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="title1" placeholder="Enter title">
+                </div>
+                <div class="form-element1 mt-[5px]">
+                    <label for="Author1">Author</label>
+                    <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="Author1" placeholder="Enter Author">
+                </div>
+                <div class="form-element1 mt-[5px]">
+                    <label for="pages1">Pages</label>
+                    <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="pages1" placeholder="Enter no. of pages">
+                </div>
+                <div class="form-element1 mt-[5px]">
+                    <label for="genre1">Genre</label>
+                    <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="genre1" placeholder="Enter Genre">
+                </div>
+                <div class="form-element1 mt-[5px]">
+                    <button class="hello bg-slate-400 my-10 rounded-full px-5 py-3 w-[100%]">Add the Book</button>
+                </div>
             </div>
         </div>
     </div>
 
-  <!-- ADD a book -->
-    <div class="center">
-        <button class="bg-slate-400 m-10 rounded-full px-5 py-3">
-            <h2 class="main">ADD a book</h2>
-        </button>
-    </div>
-    <div class="popup2 absolute top-[50%] left-[50%] w-[380px] px-[20px] py-[30px] bg-slate-500 rounded-[10px] transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 ease-in-out">
-        <div class="close-btn1 absolute top-[10px] right-[10px] h-[15px] cursor-pointer">&times;</div>
-        <div class="form1 m-[15px]">
-            <div class="form-element1">
-                <label for="title1">Title</label>
-                <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="title1" placeholder="Enter title">
-            </div>
-            <div class="form-element1 mt-[5px]">
-                <label for="Author">Author</label>
-                <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="Author1" placeholder="Enter Author">
-            </div>
-            <div class="form-element1 mt-[5px]">
-                <label for="pages1">Pages</label>
-                <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="pages1" placeholder="Enter no. of pages">
-            </div>
-            <div class="form-element1 mt-[5px]">
-                <label for="genre1">Genre</label>
-                <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="pages1" placeholder="Enter Genre">
-            </div>
-            <!-- <div class="form-element1">
-                <input type="checkbox" id="read">
-                <label for="read">Read</label>
-            </div> -->
-
-            <div class="form-element1 mt-[5px]">
-                <button class="bg-slate-400 my-10 rounded-full px-5 py-3 w-[100%]">Add the Book</button>
+    <!-- After finding the book -->
+    <div id="show-book-details" class="after-find h-[100vh]">
+        <div class="popup3 absolute top-[50%] left-[50%] w-[380px] px-[20px] py-[30px] bg-slate-500 rounded-[10px] transform -translate-x-1/2 -translate-y-1/2 z-20 hidden">
+            <div class="close-btn3 absolute top-[10px] right-[10px] h-[15px] cursor-pointer">&times;</div>
+            <div class="form2 m-[15px] mt-[5px]">
+                <div class="form-element2 mt-[5px] text-center">
+                    <label for="title">Title</label>
+                    <img src="Images/1.jpg" alt="">
+                </div>
+                <div class="form-element2 mt-[5px]">
+                    <label for="Author">Author</label>
+                    <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="Author" placeholder="Enter Author">
+                </div>
+                <div class="form-element2 mt-[5px]">
+                    <label for="pages">Pages</label>
+                    <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="pages" placeholder="Enter no. of pages">
+                </div>
+                <div class="form-element2 mt-[10px]">
+                    <input type="checkbox" id="read">
+                    <label for="read">Read</label>
+                </div>
+                <div class="form-element2 mt-[5px]">
+                    <button class="bg-slate-400 my-10 rounded-full px-5 py-3 w-[100%]">Remove</button>
+                </div>
             </div>
         </div>
+        
     </div>
-    </div>
-
-    
-<!-- after finding the book the option to see the book details and image and option to remove it and if read or not -->
-      
-<div class="after-find h-[100vh]">
-
-    <div class="popup2 absolute top-[50%] left-[50%] w-[380px] px-[20px] py-[30px] bg-slate-500 rounded-[10px] transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 ease-in-out">
-        <div class="close-btn2 absolute top-[10px] right-[10px] h-[15px] cursor-pointer">&times;</div>
-        <div class="form2 m-[15px] mt-[5px]">
-            <div class="form-element2 mt-[5px] text-center">
-                <label for="title">Title</label>
-                <img src="Images/1.jpg" alt="">
-            </div>
-            <div class="form-element2 mt-[5px]">
-                <label for="Author">Author</label>
-                <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="Author" placeholder="Enter Author">
-            </div>
-            <div class="form-element2 mt-[5px]">
-                <label for="pages">Pages</label>
-                <input class="mt-[5px] block w-[100%] p-[10px] outline-none border-[1px]" type="text" id="pages" placeholder="Enter no. of pages">
-            </div>
-            <div class="form-element2 mt-[10px]">
-                <input type="checkbox" id="read">
-                <label for="read">Read</label>
-            </div>
-            <div class="form-element2 mt-[5px]">
-                <button class="bg-slate-400 my-10 rounded-full px-5 py-3 w-[100%]">Remove</button>
-            </div>
-        </div>
-    </div>
-
-
-</div>
-
 
     <script src="index.js"></script>
 </body>

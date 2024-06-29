@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bo flex items-center bg-[url('\\Images\\18.jpg')] bg-cover bg-center">
+   
+    <div class="main h-[90vh] w-[30%] flex flex-col mt-[30px] ml-[30px] bg-pink-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100">
+
+        <div data-aos="zoom-in-up"  data-aos-duration="1400"  class="left_up h-[20vh] mx-[20px] mt-[30px] mb-[20px] rounded-[50px] bg-blue-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100">
+            <h1 class="hi flex justify-center items-center m-[60px] text-pretty text-2xl text-white">Library</h1>
+        </div>
+
+        <div data-aos="zoom-in-up"  data-aos-duration="1400"  class="left_down h-[60vh] m-[20px] mt-0 rounded-[50px] flex justify-center items-center  bg-blue-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100">
+            <div class="form m-[15px] mt-[5px]">
+                <div class="form-element mt-[5px]">
+                    <label for="title" class="text-white">Title</label>
+                    <input class="mt-[5px] block w-full p-[10px] outline-none border-[1px]" type="text" id="title" placeholder="Enter title">
+                </div>
+                <div class="form-element mt-[5px]">
+                    <label for="Author"class="text-white">Author</label>
+                    <input class="mt-[5px] block w-full p-[10px] outline-none border-[1px]" type="text" id="Author" placeholder="Enter Author">
+                </div>
+                <div class="form-element mt-[5px]">
+                    <label for="pages"class="text-white">Pages</label>
+                    <input class="mt-[5px] block w-full p-[10px] outline-none border-[1px]" type="text" id="pages" placeholder="Enter no. of pages">
+                </div>
+                <div class="form-element mt-[5px]">
+                    <button class=" my-10 rounded-full px-5 py-3 w-full imma  text-white  bg-blue-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100">Find it</button>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="main h-[90vh] w-[64%] flex flex-col mt-[30px] ml-[30px] bg-pink-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100">
+        <div data-aos="zoom-in-up"  data-aos-duration="1400"  class="right_div1 h-[30vh] m-[20px] flex flex-row items-center rounded-[40px] justify-between  bg-blue-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100 ">
+            <div class="img h-[200px] w-[200px] m-[10px] rounded-[40px]">
+                <img src="Images/10.jpg" alt="Book Cover" class="rounded-[40px]">
+            </div>
+            <div class="books">
+                <h1 class="text-xl text-gray-50">Tales of Narnia</h1>
+            </div>
+            <button id="show-find"class="text-white rounded-full px-5 py-3 mx-[10px]  bg-blue-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100">
+                <h2>Delete</h2>
+            </button>
+        </div>
+
+        <div data-aos="zoom-in-up"  data-aos-duration="1400" class="right_div2 h-[30vh] m-[20px] flex flex-row items-center rounded-[40px] justify-between  bg-blue-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100 ">
+            <div class="img h-[200px] w-[200px] m-[10px] rounded-[40px]">
+                <img src="Images/10.jpg" alt="Book Cover" class="rounded-[40px]">
+            </div>
+            <div class="books">
+                <h1 class="text-xl text-gray-50">Tales of Narnia and his mom</h1>
+            </div>
+            <button id="show-find1" class="text-white rounded-full px-5 py-3 mx-[10px]  bg-blue-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-0 border border-gray-100">
+                <h2>Delete</h2>
+            </button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 1,
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
