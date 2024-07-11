@@ -1004,6 +1004,70 @@ video {
   background-image: url('\\Images\\4.png');
 }
 
+.bg-\[url\(\'\.\/\'\)\] {
+  background-image: url('./');
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'\.\/im\'\)\] {
+  background-image: url('./im');
+}
+
+.bg-\[url\(\'\.\/Images\/4\.png\'\)\] {
+  background-image: url('./Images/4.png');
+}
+
+.bg-\[url\(\'\.\/Images\/18\.png\'\)\] {
+  background-image: url('./Images/18.png');
+}
+
+.bg-\[url\(\'\/\'\)\] {
+  background-image: url('/');
+}
+
+.bg-\[url\(\'\.\/i\'\)\] {
+  background-image: url('./i');
+}
+
+.bg-\[url\(\'\.\/images\'\)\] {
+  background-image: url('./images');
+}
+
+.bg-\[url\(\'\.\/images\/\'\)\] {
+  background-image: url('./images/');
+}
+
+.bg-\[url\(\'\.\/images\/4\.\'\)\] {
+  background-image: url('./images/4.');
+}
+
+.bg-\[url\(\'\.\/images\/4\.png\'\)\] {
+  background-image: url('./images/4.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/4\.png\'\)\] {
+  background-image: url('../images/4.png');
+}
+
+.bg-\[url\(\'\.\.\/Images\/18\.png\'\)\] {
+  background-image: url('../Images/18.png');
+}
+
+.bg-\[url\(\'\.\.\/Images\/18\.jpec\'\)\] {
+  background-image: url('../Images/18.jpec');
+}
+
+.bg-\[url\(\'\.\.\/Images\/18\.jp\'\)\] {
+  background-image: url('../Images/18.jp');
+}
+
+.bg-\[url\(\'\.\.\/Images\/18\.jpg\'\)\] {
+  background-image: url('../Images/18.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
