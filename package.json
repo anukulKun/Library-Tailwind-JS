@@ -3,7 +3,7 @@
     "tailwindcss": "^3.4.4"
   },
   "scripts": {
-    "biild": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "dev": "vite build"
   },
   "dependencies": {
