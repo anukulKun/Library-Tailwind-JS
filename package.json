@@ -3,8 +3,8 @@
     "tailwindcss": "^3.4.4"
   },
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "build": "vite build"
+    "biild": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "dev": "vite build"
   },
   "dependencies": {
     "aos": "^2.3.4",
