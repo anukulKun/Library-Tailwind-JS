@@ -992,6 +992,26 @@ video {
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
+.bg-\[\.\.\/images\] {
+  background-color: ../images;
+}
+
+.bg-\[\.\.\/images\/\] {
+  background-color: ../images/;
+}
+
+.bg-\[\.\.\/images\/4\.png\] {
+  background-color: ../images/4.png;
+}
+
+.bg-\[\.\.images\] {
+  background-color: ..images;
+}
+
+.bg-\[\'\.\.\/images\/4\.png\'\] {
+  background-color: '../images/4.png';
+}
+
 .bg-opacity-0 {
   --tw-bg-opacity: 0;
 }
@@ -1066,6 +1086,34 @@ video {
 
 .bg-\[url\(\'\.\.\/Images\/18\.jpg\'\)\] {
   background-image: url('../Images/18.jpg');
+}
+
+.bg-\[url\(\'\\\\images\\\\17\.jpg\'\)\] {
+  background-image: url('\\images\\17.jpg');
+}
+
+.bg-\[url\(\'\\Images\\4\.png\'\)\] {
+  background-image: url('\Images\4.png');
+}
+
+.bg-\[url\(\'\/\/Images\\4\.png\'\)\] {
+  background-image: url('//Images\4.png');
+}
+
+.bg-\[url\(\'\/\/Images\/\/4\.png\'\)\] {
+  background-image: url('//Images//4.png');
+}
+
+.bg-\[url\(\'\.\/\/Images\/\/4\.png\'\)\] {
+  background-image: url('.//Images//4.png');
+}
+
+.bg-\[url\(\'\.\/Images\/\/4\.png\'\)\] {
+  background-image: url('./Images//4.png');
+}
+
+.bg-\[url\(\'\.\.\/Images\/4\.png\'\)\] {
+  background-image: url('../Images/4.png');
 }
 
 .bg-cover {
